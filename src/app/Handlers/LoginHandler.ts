@@ -9,7 +9,11 @@ export class LoginHandler {
     private response: ServerResponse;
     private authorizer: Authorizer;
 
-    public constructor(request: IncomingMessage, response: ServerResponse, authorizer: Authorizer) {
+    public constructor(
+        request: IncomingMessage,
+        response: ServerResponse,
+         authorizer: Authorizer
+         ) {
         this.request = request;
         this.response = response;
         this.authorizer = authorizer;
