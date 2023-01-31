@@ -83,13 +83,13 @@ describe('LoginHandler test suite', () => {
         // call the method
         await loginHandler.handleRequest()
 
-        // happy cases 😊
+        // sad cases 😟
         expect(responseMock.statusCode).toBe(HTTP_CODES.NOT_fOUND);
         expect(responseMock.writeHead).not.toBeCalled();
         expect(responseMock.write).toBeCalledWith('wrong username or password')
     });
 
-    test.only('post request with unexpected error', async () => {
+    test('post request with unexpected error', async () => {
         requestMock.method = HTTP_METHODS.POST
         getRequestBodyMock.mockRejectedValueOnce(new Error('Something went wrong!'))
         authorizerMock.generateToken.mockReturnValueOnce(null);
@@ -97,7 +97,7 @@ describe('LoginHandler test suite', () => {
         // call the method
         await loginHandler.handleRequest()
 
-        // happy cases 😊
+        
         expect(responseMock.statusCode).toBe(HTTP_CODES.INTERNAL_SERVER_ERROR);
         expect(responseMock.writeHead).not.toBeCalled();
         expect(responseMock.write).toBeCalledWith('Internal error: Something went wrong!')
