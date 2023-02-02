@@ -6,6 +6,7 @@ import {Server} from '../../app/Server/Server';
 
 jest.mock('../../app/Handlers/LoginHandler')
 jest.mock('../../app/Handlers/DataHandler')
+jest.mock('../../app/Authorization/Authorizer')
 
 const requestMock = {
     url: ''
@@ -25,6 +26,7 @@ jest.mock('http', () => ({
 }))
 
 describe('Server test suite', () => { 
+    
     it('should create server on port 8080', ()=>{
         new Server().startServer();
         expect(listenMock.listen).toBeCalledWith(8080);
