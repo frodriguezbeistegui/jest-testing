@@ -1,1 +1,5 @@
+{"userName":"someUser","accessRights":[1,2,3],"expirationTime":{"$$date":1675480529519},"tokenId":"SomeTokenId9951il","valid":true,"_id":"3u7Ztr5BA4Yxff9I"}
+{"userName":"someUser","accessRights":[1,2,3],"expirationTime":{"$$date":1675480610285},"tokenId":"SomeTokenIdssqku","valid":true,"_id":"Jk4HV8anj537CtsJ"}
 {"userName":"someUser","accessRights":[1,2,3],"expirationTime":{"$$date":1675479571980},"tokenId":"SomeTokenId4grc0a","valid":true,"_id":"phT0qDLgttyRz5zc"}
+{"userName":"someUser","accessRights":[1,2,3],"expirationTime":{"$$date":1675481353152},"tokenId":"SomeTokenId43k28k","valid":true,"_id":"XOVyBvb4lvJ4JZG1"}
+{"$$deleted":true,"_id":"XOVyBvb4lvJ4JZG1"}
