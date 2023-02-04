@@ -2,7 +2,7 @@ import { SessionTokenDBAccess } from "../app/Authorization/SessionTokenDBAccess"
 import { SessionToken } from "../app/Models/ServerModels";
 
 
-describe('First itest suite', () => { 
+describe('SessionTokenDBAccess integration test suite', () => { 
     let sessionTokenDBAccess: SessionTokenDBAccess;
     let someSessionToken: SessionToken;
     const randomString = Math.random().toString(36).substring(7)
